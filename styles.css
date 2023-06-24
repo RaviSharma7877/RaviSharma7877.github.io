@@ -164,7 +164,7 @@ body {
   }
   
   .skills-card-img.animated {
-    animation: rotate 1.5s linear infinite;
+    animation: rotate 4.5s linear infinite;
   }
   
   /* Projects Section */
@@ -250,6 +250,90 @@ body {
     color: #333;
     text-decoration: none;
   }
+  /* Apply general styles to the form and its elements */
+#contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Apply specific styles to the form elements */
+#name,
+#email,
+#phone {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#name:focus,
+#email:focus,
+#phone:focus {
+  border-color: #4CAF50;
+}
+
+#message {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#message:focus {
+  border-color: #4CAF50;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #888888;
+  color: black;
+}
+
   
   /* Resume Buttons */
   #resume-button-1,
@@ -263,6 +347,10 @@ body {
     cursor: pointer;
     text-decoration: none;
     margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
   }
   
   /* Responsive Styles */
@@ -272,3 +360,34 @@ body {
     }
   }
   
+ 
+  button:hover{
+    background-color: #525151;
+  }
+
+  /* Style for the GitHub top languages */
+#github-top-langs img {
+  width: 50%; /* Adjust the width as needed */
+  height: 430px; /* Maintain the aspect ratio */
+  border-radius: 5px;
+  margin: auto;
+  /*border: 1px solid #ccc; /* Add a border if desired */
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+}
+
+/* Style for the GitHub stats card */
+#github-stats-card {
+  width: 100%; /* Adjust the width as needed */
+  height: 430px; /* Maintain the aspect ratio */
+  border-radius: 5px;
+  /* border: 1px solid #ccc; Add a border if desired */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+}
+#github-streak-stats {
+  width: 40%; /* Adjust the width as needed */
+  height: 450px; /* Maintain the aspect ratio */
+  border-radius: 5px;
+  margin: auto;
+  /* border: 1px solid #ccc; Add a border if desired */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+}

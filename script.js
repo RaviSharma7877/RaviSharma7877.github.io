@@ -23,3 +23,20 @@ for (var i = 0; i < navLinks.length; i++) {
     this.classList.add('active');
   });
 }
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import GitHubCalendar from 'react-github-calendar';
+
+// Define your other components and elements here
+
+const App = () => {
+  return (
+    <div>
+      {/* Other components */}
+      <GitHubCalendar className="react-activity-calendar" />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));

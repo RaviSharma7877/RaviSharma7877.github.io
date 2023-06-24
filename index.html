@@ -23,8 +23,8 @@
       <img class="home-img" src="raviimg.png" alt="Professional Photo">
       <h1 id="user-detail-name">Ravi Sharma</h1>
       <br>
-      <p id="user-detail-intro">Web Developer with expertise in domain interested</p>
-      <a id="resume-link-2" href="Ravi-Sharma-Resume.pdf" target="_blank"><button id="resume-button-2">View Resume</button></a>
+      <p id="user-detail-intro">Hello, my name is Ravi. I am a full stack web developer with a passion for creating beautiful and functional websites. Although I don’t have any professional experience yet, I have been working on various projects and have gained a lot of knowledge in the field. I am proficient in HTML, CSS, JavaScript, and Java. I am also familiar with MySQL, JPQL and Hybernet. I am excited to start my career as a full stack web developer and am eager to learn more.</p>
+      <a id="resume-link-2" href="Ravi-Sharma-Resume.pdf" target="_blank" download><button id="resume-button-2">View Resume</button></a>
     </div>
   </section>
   <section id="about" class="about section">
@@ -37,7 +37,7 @@
         and collaborating with cross-functional teams to
         deliver high-quality software solutions
         </p>
-      <a id="resume-link-1" href="Ravi-Sharma-Resume.pdf" target="_blank"><button id="resume-button-1">Download Resume</button></a>
+      <a id="resume-link-1" href="Ravi-Sharma-Resume.pdf" target="_blank" download><button id="resume-button-1" >Download Resume</button></a>
     </div>
   </section>
   <section id="skills">
@@ -84,6 +84,27 @@
         <a class="project-github-link" href="https://github.com/Fiza32/somber-sugar-2510">GitHub Repository</a>
         <a class="project-deployed-link" href="https://ephemeral-pika-0aa32d.netlify.app/">Deployed Project</a>
       </div>
+
+      
+
+      <div class="project-card">
+        <img src="s1.png" alt="Project 3">
+        <h3 class="project-title">Product page</h3>
+        <p class="project-description">This is a product page for e-commerce website</p>
+        <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+        <a class="project-github-link" href="https://github.com/RaviSharma7877/ProductPage">GitHub Repository</a>
+        <a class="project-deployed-link" href="https://ornate-tanuki-ac9da5.netlify.app/">Deployed Project</a>
+      </div>
+
+
+      <div class="project-card">
+        <img src="s2.png" alt="Project 3">
+        <h3 class="project-title">Online voting system</h3>
+        <p class="project-description">This application is make for online election voting</p>
+        <p class="project-tech-stack">Tech Stack: JAVA, MYSQL, JPQL, Hybernet</p>
+        <a class="project-github-link" href="https://github.com/RaviSharma7877/unwieldy-guide-1274">GitHub Repository</a>
+        <a class="project-deployed-link" href="https://drive.google.com/file/d/1RllfnUhs9nh_xkK0EY_0PuFm4fxQKWXM/view?usp=sharing">Video Link</a>
+      </div>
       
     </div>
     </div>
@@ -91,14 +112,40 @@
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <ul>
-        <li id="contact-github"><a href="https://github.com/RaviSharma7877">GitHub Profile</a></li>
-        <li id="contact-linkedin"><a href="https://www.linkedin.com/in/ravi-sharma-816116253/">LinkedIn Profile</a></li>
-        <li id="contact-phone">Phone: 7877173859</li>
-        <li id="contact-email">Email: sraa7877@gmail.com</li>
-      </ul>
+      <form id="contact-form" action="submit-form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      
+        <input type="submit" value="Submit">
+      </form>
+      <p id="contact-github">GitHub Profile: <a href="https://github.com/RaviSharma7877">https://github.com/RaviSharma7877</a></p>
     </div>
   </section>
+  <div class="react-activity-calendar" id="root">
+    <iframe src="https://github.com/users/RaviSharma7877/contributions" frameborder="0" scrolling="no" style="width: 100%; height: 200px;"></iframe>
+
+  </div>
+  
+  <a href="https://github.com/users/RaviSharma7877/contributions" target="_blank" rel="noopener noreferrer">
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=RaviSharma7877&theme=dark&hide_border=true&border_radius=5" alt="GitHub Streak" id="github-streak-stats" />
+  </a>
+  
+  <a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noopener noreferrer" id="github-top-langs">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaviSharma7877" alt="Top Languages" />
+  </a>
+  
+  <img src="https://github-readme-stats.vercel.app/api?username=RaviSharma7877&hide=contribs,prs" alt="GitHub Stats" id="github-stats-card" />
+  
+
   <script src="script.js"></script>
 </body>
 </html>
