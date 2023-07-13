@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Portfolio Website</title>
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
 <body>
   <nav id="nav-menu">
@@ -130,10 +137,10 @@
       <p id="contact-github">GitHub Profile: <a href="https://github.com/RaviSharma7877">https://github.com/RaviSharma7877</a></p>
     </div>
   </section>
-  <!-- <div class="react-activity-calendar" id="root">
-    <iframe src="https://github.com/users/RaviSharma7877/contributions" frameborder="0" scrolling="no" style="width: 100%; height: 200px;"></iframe>
-
-  </div> -->
+  <div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+</div>
   
   <a href="https://github.com/users/RaviSharma7877/contributions" target="_blank" rel="noopener noreferrer">
     <img src="https://github-readme-streak-stats.herokuapp.com?user=RaviSharma7877&theme=dark&hide_border=true&border_radius=5" alt="GitHub Streak" id="github-streak-stats" />
@@ -147,5 +154,18 @@
   
 
   <script src="script.js"></script>
+  <script>
+    GitHubCalendar(".calendar", "RaviSharma7877");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "RaviSharma7877", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "RaviSharma7877", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${RaviSharma7877}`)
+       }
+    }).then(r => r.text())
+</script>
 </body>
 </html>
