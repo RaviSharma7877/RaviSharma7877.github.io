@@ -170,7 +170,7 @@ img{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-.nav_link{
+.nav-link{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,7 +178,7 @@ img{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
-.nav_link:hover{
+.nav-link:hover{
     color: var(--first-color);
 }
 .nav_icon{
@@ -388,7 +388,10 @@ img{
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
 }
-.skills_name{
+.skills-card-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
@@ -587,11 +590,11 @@ img{
     border-radius: .5rem;
     justify-self: center;
 }
-.portfolio_title{
+.project-title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
 }
-.portfolio_description{
+.project-description{
     margin-bottom: var(--mb-0-75);
 }
 .portfolio_button:hover .button_icon{
