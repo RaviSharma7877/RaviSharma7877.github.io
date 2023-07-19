@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "github-calendar": "^2.3.2"
+    "github-calendar": "^2.3.2",
+    "swiper": "^10.0.4"
   }
 }

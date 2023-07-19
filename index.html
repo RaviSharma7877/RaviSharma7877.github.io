@@ -1,160 +1,858 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Portfolio Website</title>
-  <script
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script
   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="/css/style.css">
+    
 </head>
+
 <body>
-  <nav id="nav-menu">
-    <ul>
-      <li><a class="nav-link home" href="#home">Home</a></li>
-      <li><a class="nav-link about" href="#about">About</a></li>
-      <li><a class="nav-link skills" href="#skills">Skills</a></li>
-      <li><a class="nav-link projects" href="#projects">Projects</a></li>
-      <li><a class="nav-link contact" href="#contact">Contact</a></li>
-      <li><a class="nav-link resume" href="Ravi-Sharma-Resume.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
-  <section id="home">
-    <div class="container">
-     <div class="glitch-img">
-      <img class="home-img" src="raviimg.png" alt="Professional Photo">
-      <h1 id="user-detail-name">Ravi Sharma</h1>
-      <br>
-      <p id="user-detail-intro">Hello, my name is Ravi. I am a full stack web developer with a passion for creating beautiful and functional websites. Although I don’t have any professional experience yet, I have been working on various projects and have gained a lot of knowledge in the field. I am proficient in HTML, CSS, JavaScript, and Java. I am also familiar with MySQL, JPQL and Hybernet. I am excited to start my career as a full stack web developer and am eager to learn more.</p>
-      <a id="resume-link-2" href="Ravi-Sharma-Resume.pdf" target="_blank" download><button id="resume-button-2">View Resume</button></a>
-    </div>
-  </section>
-  <section id="about" class="about section">
-    <div class="container">
-      <h2>About</h2>
-      <p>Proficient in front-end technologies such as
-        HTML, CSS, and JavaScript, as well as back-end
-        technologies such as Java. Experienced in
-        working with agile development methodologies
-        and collaborating with cross-functional teams to
-        deliver high-quality software solutions
-        </p>
-      <a id="resume-link-1" href="Ravi-Sharma-Resume.pdf" target="_blank" download><button id="resume-button-1" >Download Resume</button></a>
-    </div>
-  </section>
-  <section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-        <div class="skills-card">
-          <img src="java.png" alt="Java" class="skills-card-img">
-          <h3 class="skills-card-name">Java</h3>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Ravi</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link nav-link home">
+                            <i class="uil uil-estate .nav_icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link nav-link about">
+                            <i class="uil uil-user .nav_icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link nav-link skills">
+                            <i class="uil uil-file-alt .nav_icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link nav-link services">
+                            <i class="uil uil-briefcase-alt .nav_icon"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link nav-link projects">
+                            <i class="uil uil-scenery .nav_icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link nav-link contact">
+                            <i class="uil uil-message .nav_icon"></i>ContactMe
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="/pdf/Ravi-Sharma-Resume.pdf" class="nav_link nav-link resume">
+                            <i class="uil uil-airplay .nav_icon"></i>Resume
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close .nav_icon" id="nav-close"></i>
+            </div>
+
+            <div class="nav_btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps .nav_icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/ravi-sharma-816116253/" target="_blank" class="home_social-icon" id="contact-linkedin">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://leetcode.com/sraa7877/" target="_blank" class="home_social-icon" id="">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+                        <a href="https://github.com/RaviSharma7877" target="_blank" class="home_social-icon" id="contact-github">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="7877173859" target="_blank" class="home_social-icon" id="contact-phone">
+                            <i class="uil uil-phone"></i>
+                        </a>
+                        <a href="" target="_blank" class="home_social-icon" id="contact-email">
+                            <i class="uil uil-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="b">
+                                    <path fill="currentColor"
+                                        d="M861.5 658Q752 816 582.5 848T289 770.5Q165 661 183 508.5T311.5 258q110.5-98 231-30.5t274.5 170Q971 500 861.5 658Z" />
+                                        
+                                </clipPath>
+                                <filter id="a" x="-50vw" y="-50vh" width="100vw" height="100vh">
+                                    <feFlood flood-color="#fff" result="neutral-gray" />
+                                    <feTurbulence type="fractalNoise" baseFrequency="2.5" numOctaves="100"
+                                        stitchTiles="stitch" result="noise" />
+                                    <feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise" />
+                                    <feComponentTransfer in="desaturatedNoise" result="theNoise">
+                                        <feFuncA type="table" tableValues="0 0 0.2 0" />
+                                    </feComponentTransfer>
+                                    <feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image" />
+                                    
+                                </filter>
+                            </defs>
+                            
+                            <g filter="url(#a)" clip-path="url(#b)">
+                                <path d="M861.5 658Q752 816 582.5 848T289 770.5Q165 661 183 508.5T311.5 258q110.5-98 231-30.5t274.5 170Q971 500 861.5 658Z" />
+
+                                <image class="home_blob-img home-img" x="100" y="100" xlink:href="/img/profile.png"></image>
+                            </g>
+                            
+                        </svg>
+                    </div>
+                    <div class="home_data">
+                        <h1 class="home_title" id="user-detail-name">Hi, I'am Ravi</h1>
+                        <h3 class="home_subtitle">Fullstack web Developer</h3>
+                        <p class="home_description" id="user-detail-intro">Proficient in front-end technologies such as
+                            HTML, CSS, and JavaScript, as well as back-end
+                            technologies such as Java. Experienced in
+                            working with agile development methodologies
+                            and collaborating with cross-functional teams to
+                            deliver high-quality software solutions
+                            </p>
+                        <a href="#contact" class="button button--flex">
+                            Contect Me <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My introduction</span>
+            <div class="about_container container grid">
+                <img src="/img/profile.png" alt="" class="about_img">
+                <div class="about_data">
+                    <p class="about_description">
+                        Proficient in front-end technologies such as
+HTML, CSS, and JavaScript, as well as back-end
+technologies such as Java. Experienced in
+working with agile development methodologies
+and collaborating with cross-functional teams to
+deliver high-quality software solutions
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info-title">0.7+</span>
+                            <span class="about_info-name">
+                                Years <br> experiance
+                            </span>
+                        </div>
+                        <div>
+                            <span class="about_info-title">8+</span>
+                            <span class="about_info-name">
+                                Completed <br> projects
+                            </span>
+                        </div>
+                        <div>
+                            <span class="about_info-title">00+</span>
+                            <span class="about_info-name">
+                                Companies <br> worked
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about_buttons">
+                        <a href="/pdf/Ravi-Sharma-Resume.pdf" class="button button--flex">
+                            Download CV <i class="uil uil-download-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My technical skills</span>
+
+            <div class="skills_container container grid">
+                <div class="skills_content skills_open">
+                    <div class="skills_header">
+                        <i class="uil uil-brackets-curly skills_icon"></i>
+                        <div>
+                            <h1 class="skills_title">Frontend developer</h1>
+                            <span class="skills_subtitle">More than 7 months</span>
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                    <div class="skills_list grid">
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <h3 class="skills_name">HTML</h3>
+                                <span class="skills_number">90%</span>
+                            </div>
+                            <div class="skills_bar">
+                                <span class="skills_percentage skills_html"></span>
+                            </div>
+                        </div>
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <h3 class="skills_name">CSS</h3>
+                                <span class="skills_number">80%</span>
+                            </div>
+                            <div class="skills_bar">
+                                <span class="skills_percentage skills_css"></span>
+                            </div>
+                        </div>
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <h3 class="skills_name">JavaScript</h3>
+                                <span class="skills_number">75%</span>
+                            </div>
+                            <div class="skills_bar">
+                                <span class="skills_percentage skills_js"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_content skills_close">
+                    <div class="skills_header">
+                        <i class="uil uil-server-network-alt skills_icon"></i>
+                        <div>
+                            <h1 class="skills_title">Backend developer</h1>
+                            <span class="skills_subtitle">More than 7 months</span>
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                    <div class="skills_list grid">
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <h3 class="skills_name">JAVA</h3>
+                                <span class="skills_number">70%</span>
+                            </div>
+                            <div class="skills_bar">
+                                <span class="skills_percentage skills_java"></span>
+                            </div>
+                        </div>
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <h3 class="skills_name">Hybernet</h3>
+                                <span class="skills_number">80%</span>
+                            </div>
+                            <div class="skills_bar">
+                                <span class="skills_percentage skills_hybernet"></span>
+                            </div>
+                        </div>
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <h3 class="skills_name">MySql</h3>
+                                <span class="skills_number">75%</span>
+                            </div>
+                            <div class="skills_bar">
+                                <span class="skills_percentage skills_mysql"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="qulification section">
+            <h2 class="section_title">Qulification</h2>
+            <span class="section_subtitle">My journey</span>
+            <div class="qulification_container  container">
+                <div class="qulification_tabs">
+                    <div class="qulification_button button--flex qulification_active" data-target = '#education'>
+                        <i class="uil uil-graduation-cap qulification_icon"></i>
+                        Education
+                    </div>
+                    <div class="qulification_button button--flex" data-target = '#work'>
+                        <i class="uil uil-bag-alt qulification_icon"></i>
+                        Work
+                    </div>
+                </div>
+                <div class="qulification_sections">
+                    <!-- qulification 1  -->
+                    <div class="qulification_content qulification_active" data-content id="education">
+
+                        <div class="qulification_data">
+                            <div>
+                                <h3 class="qulification_title">Fullstack web development</h3>
+                                <span class="qulification_subtitle">
+                                    Masai School
+                                </span>
+                                <div class="qulification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022-2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qulification_rounder"></span>
+                                <span class="qulification_line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qulification_data">
+                            <div></div>
+                            <div>
+                                <span class="qulification_rounder"></span>
+                                <span class="qulification_line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qulification_title">Bachelor of Science</h3>
+                                <span class="qulification_subtitle">
+                                    Mgsu University
+                                </span>
+                                <div class="qulification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019 - 2022
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="qulification_data">
+                            <div>
+                                <h3 class="qulification_title">12 grade</h3>
+                                <span class="qulification_subtitle">
+                                    Sardar Patel sr. sec. school
+                                </span>
+                                <div class="qulification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qulification_rounder"></span>
+                                <!-- <span class="qulification_line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- qulification 2  -->
+                    <!-- <div class="qulification_content" data-content id="work">
+
+                        <div class="qulification_data">
+                            <div></div>
+                            <div>
+                                <span class="qulification_rounder"></span>
+                                <span class="qulification_line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qulification_title">BSc</h3>
+                                <span class="qulification_subtitle">
+                                    Mgsu University
+                                </span>
+                                <div class="qulification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2009 - 2014
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="qulification_data">
+                            
+                            
+
+                            <div>
+                                <h3 class="qulification_title">CS</h3>
+                                <span class="qulification_subtitle">
+                                    Mgsu University
+                                </span>
+                                <div class="qulification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2009 - 2014
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qulification_rounder"></span>
+                                <span class="qulification_line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qulification_data">
+                            <div></div>
+                            <div>
+                                <span class="qulification_rounder"></span>
+                                 <span class="qulification_line"></span> 
+                            </div>
+                            <div>
+                                <h3 class="qulification_title">Web</h3>
+                                <span class="qulification_subtitle">
+                                    Masai
+                                </span>
+                                <div class="qulification_calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2009 - 2014
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <h2 class="section_title">Services</h2>
+            <span class="section_subtitle">What I provide</span>
+
+            <div class="services_container container grid">
+                <!-- services 1-->
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-web-grid services_icon"></i>
+                        <h3 class="services_title">Freelancing</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_model-title">Fullstack <br> web development</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop web Frontend</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop web Backend</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- services 2-->
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-arrow services_icon"></i>
+                        <h3 class="services_title">Frontend Design</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_model-title">Frontend <br>Design</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop Frontend part</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- services 3-->
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-server services_icon"></i>
+                        <h3 class="services_title">Backend Design</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_model-title">Backend <br> Design</h4>
+                            <i class="uil uil-times services_modal-close"></i>
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop Backend part</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfoloio section" id="projects">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">More recent work</span>
+
+            <div class="portfolio_container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- portfolio 1  -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="/img/dashB.png" alt="" class="portfolio_img">
+                        <h3 class="portfolio_title project-title">AdminDashboard</h3>
+                        
+                        <p class="portfolio_description project-description">
+                            A high qulity good looking admin dashboard for admin to do CRUD opperations
+                            <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
+                        </p>
+                        <a href="https://zippy-madeleine-f10924.netlify.app/" target="_blank" class="button button--flrx button--small portfolio_button">
+                            Live
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                        <a href="#" class="button button--flrx button--small portfolio_button">
+                            SourceCode
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- portfolio 2  -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="/img/postal.png" alt="" class="portfolio_img">
+                        <h3 class="portfolio_title project-title">PostalShop</h3>
+                        
+                        <p class="portfolio_description project-description">
+                            A high qulity good looking fashion website where you can buy what you want
+                            <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
+                        </p>
+                        <a href="https://ephemeral-pika-0aa32d.netlify.app/" target="_blank" class="button button--flrx button--small portfolio_button">
+                            Live
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                        <a href="#" class="button button--flrx button--small portfolio_button">
+                            SourceCode
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- portfolio 3  -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="/img/blue.png" alt="" class="portfolio_img">
+                        <h3 class="portfolio_title project-title">
+                            Blueberry</h3>
+                        
+                        <p class="portfolio_description project-description">
+                            A high qulity good looking fashion website where you can buy what you want
+                            <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
+                        </p>
+                        <a href="https://warm-sunflower-d4bee8.netlify.app/" target="_blank" class="button button--flrx button--small portfolio_button">
+                            Live
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                        <a href="#" class="button button--flrx button--small portfolio_button">
+                            SourceCode
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- portfolio 4  -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="/img/todo.png" alt="" class="portfolio_img">
+                        <h3 class="portfolio_title">ToDo Application</h3>
+                        <p class="portfolio_description">A todo application for admin to add employees and its related details
+                            <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
+                        </p>
+                        <a href="https://velvety-queijadas-803d72.netlify.app/index.html" target="_blank" class="button button--flrx button--small portfolio_button">
+                            Live
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                        <a href="#" class="button button--flrx button--small portfolio_button">
+                            SourceCode
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <section class="github-data section">
+            <h2 class="section_title">Github Data</h2>
+            <span class="section_subtitle">GitHub progression</span>
+            <div class="github-data_content">
+                <div class="calendar">
+                    <!-- Loading stuff -->
+                    Loading the data just for you.
+                </div>
+                  
+            </div>
+            <div class="services_container container grid">
+                
+                <div class="github-data_content">
+                    <a href="https://github.com/users/RaviSharma7877/contributions" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github-readme-streak-stats.herokuapp.com?user=RaviSharma7877&theme=dark&hide_border=true&border_radius=5" alt="GitHub Streak" id="github-streak-stats" />
+                      </a>
+                </div>
+                <div class="github-data_content">
+                    <a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noopener noreferrer" id="github-top-langs">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaviSharma7877" alt="Top Languages" />
+                      </a>
+                </div>
+                <div class="github-data_content">
+                    <img src="https://github-readme-stats.vercel.app/api?username=RaviSharma7877&hide=contribs,prs" alt="GitHub Stats" id="github-stats-card" />
+                </div>
+            </div>
+        </section>
+
+
+        <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project data">
+                        <h2 class="project_title">You have a new Project</h2>
+                        <p class="project_description">Connect me now and get 30% discount</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message project_icon button_icon"></i>
+                        </a>
+                    </div>
+                    <img src="/img/profile.png" alt="" class="project_img">
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="testimonial section">
+
+            <h2 class="section_title">Testimonials</h2>
+            <span class="section_subtitle">What people say</span>
+
+            <div class="testimonial_container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    Testimonials 1 
+                    <div class="testimonial_content swiper-slide">
+                        <div class="testimonial_data">
+                            <div class="testimonial_header">
+                                <img src="/img/profile.png" alt="" class="testimonial_img">
+                                <div>
+                                    <h3 class="testimonial_name">SaraIndia</h3>
+                                    <span class="testimonial_client">Client</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.
+                        </p>
+                    </div>
+                    Testimonials 2 
+                    <div class="testimonial_content swiper-slide">
+                        <div class="testimonial_data">
+                            <div class="testimonial_header">
+                                <img src="/img/profile.png" alt="" class="testimonial_img">
+                                <div>
+                                    <h3 class="testimonial_name">Sara</h3>
+                                    <span class="testimonial_client">Client</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.
+                        </p>
+                    </div>
+                    Testimonials 3 
+                    <div class="testimonial_content swiper-slide">
+                        <div class="testimonial_data">
+                            <div class="testimonial_header">
+                                <img src="/img/profile.png" alt="" class="testimonial_img">
+                                <div>
+                                    <h3 class="testimonial_name">India</h3>
+                                    <span class="testimonial_client">Client</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                                <i class="uil uil-star testimonial_icon-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-testimonials"></div>
+            </div>
+        </section> -->
+
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contect Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+
+                        <div>
+                            <div class="contact_title">Call Me</div>
+                            <span class="contact_subtitle">+91-7877173859</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+
+                        <div>
+                            <div class="contact_title">Email</div>
+                            <span class="contact_subtitle">sraa7877@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+
+                        <div>
+                            <div class="contact_title">Location</div>
+                            <span class="contact_subtitle">Jaipur/Rajasthan</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Project</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        </div>
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Ravi</h1>
+                    <span class="footer_subtitle">Frontend developer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#services" class="footer_link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="" target="_blank" class="footer_social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ravi-sharma-816116253/" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer_social" id="contact-github">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer_social" id="contact-phone">
+                        <i class="uil uil-phone"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer_social" id="contact-email">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer_copy">&#169; Ravi. All right reserved</p>
         </div>
-        <div class="skills-card">
-          <img src="mysql.jpg" alt="MySQL" class="skills-card-img">
-          <h3 class="skills-card-name">MySQL</h3>
-        </div>
-        <div class="skills-card">
-          <img src="JPQL.jpg" alt="JPQL" class="skills-card-img">
-          <h3 class="skills-card-name">JPQL</h3>
-        </div>
-        <div class="skills-card">
-          <img src="Hibernate.jpg" alt="Hibernate" class="skills-card-img">
-          <h3 class="skills-card-name">Hibernate</h3>
-        </div>
-    </div>
-      </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="product-grid">
-      <div class="project-card">
-        <img src="Screenshot 2023-06-23 164819.png" alt="Project 1">
-        <h3 class="project-title">Blueberry</h3>
-        <p class="project-description">Discover a world of endless shopping possibilities at our e-commerce store! with Blueberry . From fashion and beauty to home, we've got everything you need at our e-commerce store.</p>
-        <p class="project-tech-stack">Tech Stack: Javascript, LocalStarage, Api, Css, Html</p>
-        <a class="project-github-link" href="https://github.com/arjunkumargaun/shy-exchange-4248">GitHub Repository</a>
-        <a class="project-deployed-link" href="https://warm-sunflower-d4bee8.netlify.app/">Deployed Project</a>
-      </div>
-      
-      <div class="project-card">
-        <img src="ssss.png" alt="Project 2">
-        <h3 class="project-title">PostalShop</h3>
-        <p class="project-description">This is a clone website of AeroPostal which is a american e-commerse website we have named it as PostalShop</p>
-        <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
-        <a class="project-github-link" href="https://github.com/Fiza32/somber-sugar-2510">GitHub Repository</a>
-        <a class="project-deployed-link" href="https://ephemeral-pika-0aa32d.netlify.app/">Deployed Project</a>
-      </div>
+    </footer>
 
-      
-
-      <div class="project-card">
-        <img src="s1.png" alt="Project 3">
-        <h3 class="project-title">Product page</h3>
-        <p class="project-description">This is a product page for e-commerce website</p>
-        <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
-        <a class="project-github-link" href="https://github.com/RaviSharma7877/ProductPage">GitHub Repository</a>
-        <a class="project-deployed-link" href="https://ornate-tanuki-ac9da5.netlify.app/">Deployed Project</a>
-      </div>
-
-
-      <div class="project-card">
-        <img src="s2.png" alt="Project 3">
-        <h3 class="project-title">Online voting system</h3>
-        <p class="project-description">This application is make for online election voting</p>
-        <p class="project-tech-stack">Tech Stack: JAVA, MYSQL, JPQL, Hybernet</p>
-        <a class="project-github-link" href="https://github.com/RaviSharma7877/unwieldy-guide-1274">GitHub Repository</a>
-        <a class="project-deployed-link" href="https://drive.google.com/file/d/1RllfnUhs9nh_xkK0EY_0PuFm4fxQKWXM/view?usp=sharing">Video Link</a>
-      </div>
-      
-    </div>
-    </div>
-  </section>
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <form id="contact-form" action="submit-form.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-      
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-      
-        <input type="submit" value="Submit">
-      </form>
-      <p id="contact-github">GitHub Profile: <a href="https://github.com/RaviSharma7877">https://github.com/RaviSharma7877</a></p>
-    </div>
-  </section>
-  <div class="calendar">
-    <!-- Loading stuff -->
-    Loading the data just for you.
-</div>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   
-  <a href="https://github.com/users/RaviSharma7877/contributions" target="_blank" rel="noopener noreferrer">
-    <img src="https://github-readme-streak-stats.herokuapp.com?user=RaviSharma7877&theme=dark&hide_border=true&border_radius=5" alt="GitHub Streak" id="github-streak-stats" />
-  </a>
-  
-  <a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noopener noreferrer" id="github-top-langs">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaviSharma7877" alt="Top Languages" />
-  </a>
-  
-  <img src="https://github-readme-stats.vercel.app/api?username=RaviSharma7877&hide=contribs,prs" alt="GitHub Stats" id="github-stats-card" />
-  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
 
-  <script src="script.js"></script>
-  <script>
+<!-- <script src="/js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script> -->
+<script src="/js/index.js"></script>
+<script>
+    // const username = "RaviSharma7877";
     GitHubCalendar(".calendar", "RaviSharma7877");
 
     // or enable responsive functionality:
@@ -163,9 +861,8 @@
     // Use a proxy
     GitHubCalendar(".calendar", "RaviSharma7877", {
        proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${RaviSharma7877}`)
+         return fetch(`https://your-proxy.com/github?user=${username}`)
        }
     }).then(r => r.text())
-</script>
-</body>
+  </script>
 </html>
