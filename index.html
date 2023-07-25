@@ -1,912 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravi-Sharma-Portfolio</title>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
-
 <body>
-    <header class="header" id="header">
-        <nav class="nav container" id="nav-menu">
-            <a href="#" class="nav_logo">Ravi</a>
+    <!-- start navbar  -->
+    <nav id="nav-menu">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="/img/Logo.png" alt=""></a>
+            <ul class="nav-links">
+                <li><a class="nav-link home" href="#home">Home</a></li>
+                <li><a class="nav-link about" href="#about">About</a></li>
+                <li><a class="nav-link skills" href="#skills">Skills</a></li>
+                <li><a class="nav-link projects" href="#projects">Projects</a></li>
+                <li><a class="nav-link contact" href="#contact">Contact</a></li>
+                <li><a id="resume-button-1" class="nav-link resume" href="/pdf/Ravi-Sharma-Resume.pdf" download>Resume</a></li>
+            </ul>
+            <button id="theme-icon" ><i class="fa fa-palette"></i></button>
+        </div>
+    </nav>
+    <!-- end navbar  -->
 
-            <div class="nav_menu">
-                <ul class="nav_list grid">
-                    <li class="nav_item">
-                        <a href="#home" class="nav-link home active-link">
-                            <i class="uil uil-estate .nav_icon"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav-link about">
-                            <i class="uil uil-user .nav_icon"></i>About
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#skills" class="nav-link skills">
-                            <i class="uil uil-file-alt .nav_icon"></i>Skills
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#services" class="nav-link services">
-                            <i class="uil uil-briefcase-alt .nav_icon"></i>Services
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#projects" class="nav-link projects">
-                            <i class="uil uil-scenery .nav_icon"></i>Projects
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav-link contact">
-                            <i class="uil uil-message .nav_icon"></i>Contact
-                        </a>
-                    </li>
-                    <li class="nav_item" id="resume-link-1">
-                        <a href="/pdf/Ravi-Sharma-Resume.pdf" class="nav-link resume" download>
-                            <i class="uil uil-airplay .nav_icon"></i>Resume
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav_close .nav_icon" id="nav-close"></i>
+    <!-- header start  -->
+    <header id="home">
+        <div class="container header-container">
+            <div class="header-image">
+                <img class="home-img" src="/img/profile.png" alt="">
             </div>
-
-            <div class="nav_btns">
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-apps .nav_icon"></i>
-                </div>
+            <h3 id="user-detail-name">Ravi Sharma</h3>
+            <p id="user-detail-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, repudiandae distinctio quae dolor dicta facere, quia eligendi beatae dolores repellendus molestias velit odio natus dolorem nemo repellat et. Debitis, quis!</p>
+            <div class="header-action-aria">
+                <a href="#Contact" class="btn btn-primary">Let's Talk</a>
+                <a href="#Portfolio" class="btn">My Work</a>
             </div>
-        </nav>
+            <div class="header-social">
+                <a id="contact-github" class="nav-link contact" href=""><i class="fab fa-github"></i></a>
+                <a id="contact-linkedin" class="nav-link contact" href=""><i class="fab fa-linkedin"></i></a>
+                <a id="contact-phone" class="nav-link contact" href=""><i class="fa fa-phone"></i></a>
+                <a id="contact-email" class="nav-link contact" href=""><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
     </header>
+    <!-- header end  -->
 
-
-    <main class="main">
-
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_content grid">
-                    <div class="home_social">
-                        <a href="https://www.linkedin.com/in/ravi-sharma-816116253/" target="_blank"
-                            class="home_social-icon" id="contact-linkedin">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="https://leetcode.com/sraa7877/" target="_blank" class="home_social-icon" id="">
-                            <i class="uil uil-dribbble"></i>
-                        </a>
-                        <a href="https://github.com/RaviSharma7877" target="_blank" class="home_social-icon"
-                            id="contact-github">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <a href="7877173859" target="_blank" class="home_social-icon" id="contact-phone">
-                            <i class="uil uil-phone"></i>
-                        </a>
-                        <a href="" target="_blank" class="home_social-icon" id="contact-email">
-                            <i class="uil uil-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="home_img">
-                        <img src="/img/profile.png" alt="" class="home-img">
-                        <!-- <svg class="home-img home_blob" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="b">
-                                    <path fill="currentColor"
-                                        d="M861.5 658Q752 816 582.5 848T289 770.5Q165 661 183 508.5T311.5 258q110.5-98 231-30.5t274.5 170Q971 500 861.5 658Z" />
-
-                                </clipPath>
-                                <filter id="a" x="-50vw" y="-50vh" width="100vw" height="100vh">
-                                    <feFlood flood-color="#fff" result="neutral-gray" />
-                                    <feTurbulence type="fractalNoise" baseFrequency="2.5" numOctaves="100"
-                                        stitchTiles="stitch" result="noise" />
-                                    <feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise" />
-                                    <feComponentTransfer in="desaturatedNoise" result="theNoise">
-                                        <feFuncA type="table" tableValues="0 0 0.2 0" />
-                                    </feComponentTransfer>
-                                    <feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image" />
-
-                                </filter>
-                            </defs>
-
-                            <g filter="url(#a)" clip-path="url(#b)">
-                                <path
-                                    d="M861.5 658Q752 816 582.5 848T289 770.5Q165 661 183 508.5T311.5 258q110.5-98 231-30.5t274.5 170Q971 500 861.5 658Z" />
-
-                                <image class="home_blob-img" x="100" y="100" xlink:href="/img/profile.png">
-                                </image>
-                            </g>
-
-                        </svg> -->
-                    </div>
-                    <div class="home_data">
-                        <h1 class="home_title" id="user-detail-name">Hi, I'am Ravi</h1>
-                        <h3 class="home_subtitle">Fullstack web Developer</h3>
-                        <p class="home_description" id="user-detail-intro">Proficient in front-end technologies such as
-                            HTML, CSS, and JavaScript, as well as back-end
-                            technologies such as Java. Experienced in
-                            working with agile development methodologies
-                            and collaborating with cross-functional teams to
-                            deliver high-quality software solutions
-                        </p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button_icon"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="home_scroll">
-                    <a href="#about" class="home_scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                        <span class="home_scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
-                    </a>
+    <!-- about section start  -->
+    <section id="about" class="about section">
+        <div class="container about-container">
+            <div class="about-left">
+                <div class="about-image">
+                    <img src="/img/profile.png" alt="">
                 </div>
             </div>
-        </section>
-
-        <section class="about section" id="about">
-            <h2 class="section_title">About Me</h2>
-            <span class="section_subtitle">My introduction</span>
-            <div class="about_container container grid">
-                <img src="/img/profile.png" alt="" class="about_img">
-                <div class="about_data">
-                    <p class="about_description">
-                        Proficient in front-end technologies such as
-                        HTML, CSS, and JavaScript, as well as back-end
-                        technologies such as Java. Experienced in
-                        working with agile development methodologies
-                        and collaborating with cross-functional teams to
-                        deliver high-quality software solutions
-                    </p>
-                    <div class="about_info">
-                        <div>
-                            <span class="about_info-title">0.7+</span>
-                            <span class="about_info-name">
-                                Years <br> experiance
-                            </span>
-                        </div>
-                        <div>
-                            <span class="about_info-title">8+</span>
-                            <span class="about_info-name">
-                                Completed <br> projects
-                            </span>
-                        </div>
-                        <div>
-                            <span class="about_info-title">00+</span>
-                            <span class="about_info-name">
-                                Companies <br> worked
-                            </span>
-                        </div>
+            <div class="about-right">
+                <h3>About Me</h3>
+                <div class="about-cards">
+                    <div class="about-card card">
+                        <span><i class="fa fa-award"></i></span>
+                        <h5>Experince</h5>
+                        <small>2+ Years Working</small>
                     </div>
-                    <div class="about_buttons" id="resume-link-2">
-                        <a href="/pdf/Ravi-Sharma-Resume.pdf" class="button button--flex" download>
-                            Download CV <i class="uil uil-download-alt"></i>
-                        </a>
+                    <div class="about-card card">
+                        <span><i class="fa fa-book"></i></span>
+                        <h5>Projects</h5>
+                        <small>90+ Completed</small>
+                    </div>
+                    <div class="about-card card">
+                        <span><i class="fa fa-users"></i></span>
+                        <h5>Clints</h5>
+                        <small>20+ Happy Clintes</small>
                     </div>
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, repudiandae distinctio quae dolor dicta facere, quia eligendi beatae dolores repellendus molestias velit odio natus dolorem nemo repellat et. Debitis, quis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aut, nemo, recusandae sit voluptates molestiae deserunt commodi, illum alias impedit autem repudiandae similique odit facilis atque iure dolorum expedita delectus!</p>
+                <a href="/pdf/Ravi-Sharma-Resume.pdf" id="resume-button-2" class="btn btn-primary" download><i class="fa fa-download"></i>Download CV</a>
             </div>
-        </section>
+        </div>
+    </section>
+    <!-- about section end  -->
 
-        <section class="skills section" id="skills">
-            <h2 class="section_title">Skills</h2>
-            <span class="section_subtitle">My technical skills</span>
-
-            <div class="skills_container container grid">
-                <div class="skills_content skills_open">
-                    <div class="skills_header">
-                        <i class="uil uil-brackets-curly skills_icon"></i>
-                        <div>
-                            <h1 class="skills_title">Frontend developer</h1>
-                            <span class="skills_subtitle">More than 7 months</span>
-                        </div>
-                        <i class="uil uil-angle-down skills_arrow"></i>
-                    </div>
-                    <div class="skills_list grid">
-                        <div class="skills_data">
-                            <div class="skills_title">
-                                <h3 class="skills-card-name">HTML
-                                    <img src="/img/html.png" alt="" width="40px" class="skills-card-img">
-                                </h3>
-                                
-                                <span class="skills_number">90%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_html"></span>
-                            </div>
-                        </div>
-                        <div class="skills_data">
-                            <div class="skills_title">
-                                <h3 class="skills-card-name">CSS
-                                    <img src="/img/css.avif" alt="" width="40px" class="skills-card-img">
-                                </h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_css"></span>
-                            </div>
-                        </div>
-                        <div class="skills_data">
-                            <div class="skills_title">
-                                <h3 class="skills-card-name">JavaScript
-                                    <img src="/img/Js.png" alt="" width="45px" class="skills-card-img">
-                                </h3>
-                                <span class="skills_number">75%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_js"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills_content skills_close">
-                    <div class="skills_header">
-                        <i class="uil uil-server-network-alt skills_icon"></i>
-                        <div>
-                            <h1 class="skills_title">Backend developer</h1>
-                            <span class="skills_subtitle">More than 7 months</span>
-                        </div>
-                        <i class="uil uil-angle-down skills_arrow"></i>
-                    </div>
-                    <div class="skills_list grid">
-                        <div class="skills_data">
-                            <div class="skills_title">
-                                <h3 class="skills-card-name">JAVA
-                                    <img src="/img/java.jpg" alt="" width="80px" class="skills-card-img">
-                                </h3>
-                                <span class="skills_number">70%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_java"></span>
-                            </div>
-                        </div>
-                        <div class="skills_data">
-                            <div class="skills_title">
-                                <h3 class="skills-card-name">Hybernet
-                                    <img src="/img/hibernate-logo.svg" alt="" width="80px" class="skills-card-img">
-                                </h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_hybernet"></span>
-                            </div>
-                        </div>
-                        <div class="skills_data">
-                            <div class="skills_title">
-                                <h3 class="skills-card-name">MySql
-                                    <img src="/img/mysql.png" alt="" width="80px" class="skills-card-img">
-                                </h3>
-                                <span class="skills_number">75%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_mysql"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <section class="qulification section">
-            <h2 class="section_title">Qulification</h2>
-            <span class="section_subtitle">My journey</span>
-            <div class="qulification_container  container">
-                <div class="qulification_tabs">
-                    <div class="qulification_button button--flex qulification_active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qulification_icon"></i>
-                        Education
-                    </div>
-                    <div class="qulification_button button--flex" data-target='#work'>
-                        <i class="uil uil-bag-alt qulification_icon"></i>
-                        Work
-                    </div>
-                </div>
-                <div class="qulification_sections">
-                    <!-- qulification 1  -->
-                    <div class="qulification_content qulification_active" data-content id="education">
-
-                        <div class="qulification_data">
-                            <div>
-                                <h3 class="qulification_title">Fullstack web development</h3>
-                                <span class="qulification_subtitle">
-                                    Masai School
-                                </span>
-                                <div class="qulification_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2022-2023
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <span class="qulification_line"></span>
-                            </div>
-                        </div>
-
-                        <div class="qulification_data">
-                            <div></div>
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <span class="qulification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qulification_title">Bachelor of Science</h3>
-                                <span class="qulification_subtitle">
-                                    Mgsu University
-                                </span>
-                                <div class="qulification_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - 2022
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="qulification_data">
-                            <div>
-                                <h3 class="qulification_title">12 grade</h3>
-                                <span class="qulification_subtitle">
-                                    Sardar Patel sr. sec. school
-                                </span>
-                                <div class="qulification_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018 - 2019
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <!-- <span class="qulification_line"></span> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- qulification 2  -->
-                    <!-- <div class="qulification_content" data-content id="work">
-
-                        <div class="qulification_data">
-                            <div></div>
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <span class="qulification_line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qulification_title">BSc</h3>
-                                <span class="qulification_subtitle">
-                                    Mgsu University
-                                </span>
-                                <div class="qulification_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2009 - 2014
-                                </div>
-                            </div>
-
-                            
-                        </div>
-
-                        <div class="qulification_data">
-                            
-                            
-
-                            <div>
-                                <h3 class="qulification_title">CS</h3>
-                                <span class="qulification_subtitle">
-                                    Mgsu University
-                                </span>
-                                <div class="qulification_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2009 - 2014
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                <span class="qulification_line"></span>
-                            </div>
-                        </div>
-
-                        <div class="qulification_data">
-                            <div></div>
-                            <div>
-                                <span class="qulification_rounder"></span>
-                                 <span class="qulification_line"></span> 
-                            </div>
-                            <div>
-                                <h3 class="qulification_title">Web</h3>
-                                <span class="qulification_subtitle">
-                                    Masai
-                                </span>
-                                <div class="qulification_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2009 - 2014
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-        <section class="services section" id="services">
-            <h2 class="section_title">Services</h2>
-            <span class="section_subtitle">What I provide</span>
-
-            <div class="services_container container grid">
-                <!-- services 1-->
-                <div class="services_content">
-                    <div>
-                        <i class="uil uil-web-grid services_icon"></i>
-                        <h3 class="services_title">Freelancing</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services_button">
-                        View More
-                        <i class="uil uil-arrow-right button_icon"></i>
-                    </span>
-                    <div class="services_modal">
-                        <div class="services_modal-content">
-                            <h4 class="services_model-title">Fullstack <br> web development</h4>
-                            <i class="uil uil-times services_modal-close"></i>
-                            <ul class="services_modal-services grid">
-                                <li class="services_modal-service">
-                                    <i class="uil uil-check-circle services_modal-icon"></i>
-                                    <p>I develop web Frontend</p>
-                                </li>
-                                <li class="services_modal-service">
-                                    <i class="uil uil-check-circle services_modal-icon"></i>
-                                    <p>I develop web Backend</p>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- services 2-->
-                <div class="services_content">
-                    <div>
-                        <i class="uil uil-arrow services_icon"></i>
-                        <h3 class="services_title">Frontend Design</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services_button">
-                        View More
-                        <i class="uil uil-arrow-right button_icon"></i>
-                    </span>
-                    <div class="services_modal">
-                        <div class="services_modal-content">
-                            <h4 class="services_model-title">Frontend <br>Design</h4>
-                            <i class="uil uil-times services_modal-close"></i>
-                            <ul class="services_modal-services grid">
-                                <li class="services_modal-service">
-                                    <i class="uil uil-check-circle services_modal-icon"></i>
-                                    <p>I develop Frontend part</p>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- services 3-->
-                <div class="services_content">
-                    <div>
-                        <i class="uil uil-server services_icon"></i>
-                        <h3 class="services_title">Backend Design</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services_button">
-                        View More
-                        <i class="uil uil-arrow-right button_icon"></i>
-                    </span>
-                    <div class="services_modal">
-                        <div class="services_modal-content">
-                            <h4 class="services_model-title">Backend <br> Design</h4>
-                            <i class="uil uil-times services_modal-close"></i>
-                            <ul class="services_modal-services grid">
-                                <li class="services_modal-service">
-                                    <i class="uil uil-check-circle services_modal-icon"></i>
-                                    <p>I develop Backend part</p>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project section" id="projects">
-            <h2 class="section_title">Portfolio</h2>
-            <span class="section_subtitle">More recent work</span>
-
-            <div class="portfolio_container container swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- portfolio 1  -->
-                    <div class="project-card portfolio_content grid swiper-slide">
-                        <img src="/img/dashB.png" alt="" class="portfolio_img">
-                        <h3 class="project-title">AdminDashboard</h3>
-
-                        <p class="project-description">
-                            A high qulity good looking admin dashboard for admin to do CRUD opperations
-                        <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
-                        </p>
-                        <a href="https://zippy-madeleine-f10924.netlify.app/" target="_blank"
-                            class="project-deployed-link button button--flrx button--small portfolio_button">
-                            Live
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                        <a href="#" class="project-github-link button button--flrx button--small portfolio_button">
-                            SourceCode
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                    </div>
-
-                    <!-- portfolio 2  -->
-                    <div class="project-card portfolio_content grid swiper-slide">
-                        <img src="/img/postal.png" alt="" class="portfolio_img">
-                        <h3 class="project-title">PostalShop</h3>
-
-                        <p class="project-description">
-                            A high qulity good looking fashion website where you can buy what you want
-                        <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
-                        </p>
-                        <a href="https://ephemeral-pika-0aa32d.netlify.app/" target="_blank"
-                            class="project-deployed-link button button--flrx button--small portfolio_button">
-                            Live
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                        <a href="#" class="project-github-link button button--flrx button--small portfolio_button">
-                            SourceCode
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                    </div>
-
-                    <!-- portfolio 3  -->
-                    <div class="project-card portfolio_content grid swiper-slide">
-                        <img src="/img/blue.png" alt="" class="portfolio_img">
-                        <h3 class="project-title">
-                            Blueberry</h3>
-
-                        <p class="project-description">
-                            A high qulity good looking fashion website where you can buy what you want
-                        <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
-                        </p>
-                        <a href="https://warm-sunflower-d4bee8.netlify.app/" target="_blank"
-                            class="project-deployed-link button button--flrx button--small portfolio_button">
-                            Live
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                        <a href="#" class="project-github-link button button--flrx button--small portfolio_button">
-                            SourceCode
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                    </div>
-
-                    <!-- portfolio 4  -->
-                    <div class="project-card portfolio_content grid swiper-slide">
-                        <img src="/img/todo.png" alt="" class="portfolio_img">
-                        <h3 class="project-title">ToDo Application</h3>
-                        <p class="project-description">A todo application for admin to add employees and its related
-                            details
-                        <h3 class="project-tech-stack">Teckstacks:- <span>Html | Css | JavaScript</span></h3>
-                        </p>
-                        <a href="https://velvety-queijadas-803d72.netlify.app/index.html" target="_blank"
-                            class="project-deployed-link button button--flrx button--small portfolio_button">
-                            Live
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                        <a href="#" class="project-github-link button button--flrx button--small portfolio_button">
-                            SourceCode
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-
-        <section class="github-data section">
-            <h2 class="section_title">Github Data</h2>
-            <span class="section_subtitle">GitHub progression</span>
-            <div class="github-data_content">
-                <div class="calendar">
-                    <!-- Loading stuff -->
-                    Loading the data just for you.
-                </div>
-
-            </div>
-            <div class="services_container container grid">
-
-                <div class="github-data_content">
-                    <a href="https://github.com/users/RaviSharma7877/contributions" id="github-streak-stats" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="https://github-readme-streak-stats.herokuapp.com?user=RaviSharma7877&theme=dark&hide_border=true&border_radius=5"
-                            alt="GitHub Streak" id="github-streak-stats" />
-                    </a>
-                </div>
-                <div class="github-data_content">
-                    <a href="https://github.com/anuraghazra/github-readme-stats" id="github-top-langs" target="_blank"
-                        rel="noopener noreferrer" id="github-top-langs">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaviSharma7877"
-                            alt="Top Languages" />
-                    </a>
-                </div>
-                <div class="github-data_content" id="github-stats-card">
-                    <img src="https://github-readme-stats.vercel.app/api?username=RaviSharma7877&hide=contribs,prs"
-                        alt="GitHub Stats" id="github-stats-card" />
-                </div>
-            </div>
-        </section>
-
-
-        <section class="portfoloio section">
-            <div class="project_bg">
-                <div class="project_container container grid">
-                    <div class="project data">
-                        <h2 class="project_title">You have a new Project</h2>
-                        <p class="project_description">Connect me now and get 30% discount</p>
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Me
-                            <i class="uil uil-message project_icon button_icon"></i>
-                        </a>
-                    </div>
-                    <img src="/img/profile.png" alt="" class="project_img">
-                </div>
-            </div>
-        </section>
-
-        <!-- <section class="testimonial section">
-
-            <h2 class="section_title">Testimonials</h2>
-            <span class="section_subtitle">What people say</span>
-
-            <div class="testimonial_container container swiper mySwiper">
-                <div class="swiper-wrapper">
-                    Testimonials 1 
-                    <div class="testimonial_content swiper-slide">
-                        <div class="testimonial_data">
-                            <div class="testimonial_header">
-                                <img src="/img/profile.png" alt="" class="testimonial_img">
-                                <div>
-                                    <h3 class="testimonial_name">SaraIndia</h3>
-                                    <span class="testimonial_client">Client</span>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                            </div>
-                        </div>
-                        <p class="testimonial_description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.
-                        </p>
-                    </div>
-                    Testimonials 2 
-                    <div class="testimonial_content swiper-slide">
-                        <div class="testimonial_data">
-                            <div class="testimonial_header">
-                                <img src="/img/profile.png" alt="" class="testimonial_img">
-                                <div>
-                                    <h3 class="testimonial_name">Sara</h3>
-                                    <span class="testimonial_client">Client</span>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                            </div>
-                        </div>
-                        <p class="testimonial_description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.
-                        </p>
-                    </div>
-                    Testimonials 3 
-                    <div class="testimonial_content swiper-slide">
-                        <div class="testimonial_data">
-                            <div class="testimonial_header">
-                                <img src="/img/profile.png" alt="" class="testimonial_img">
-                                <div>
-                                    <h3 class="testimonial_name">India</h3>
-                                    <span class="testimonial_client">Client</span>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                                <i class="uil uil-star testimonial_icon-star"></i>
-                            </div>
-                        </div>
-                        <p class="testimonial_description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-testimonials"></div>
-            </div>
-        </section> -->
-
-        <section class="contact section" id="contact">
-            <h2 class="section_title">Contact Me</h2>
-            <span class="section_subtitle">Get in touch</span>
-
-            <div class="contact_container container grid">
+    <!-- services section start  -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <p>Lorem ipsum dolor!</p>
+        <div class="container services-container">
+            <div class="skills-card card card-light services-card">
+                <span><img class="skills-card-img" src="/img/Frontend.png" alt=""></span>
                 <div>
-                    <div class="contact_information">
-                        <i class="uil uil-phone contact_icon"></i>
-
-                        <div>
-                            <div class="contact_title">Call Me</div>
-                            <span class="contact_subtitle">+91-7877173859</span>
-                        </div>
-                    </div>
-
-                    <div class="contact_information">
-                        <i class="uil uil-envelope contact_icon"></i>
-
-                        <div>
-                            <div class="contact_title">Email</div>
-                            <span class="contact_subtitle">sraa7877@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact_information">
-                        <i class="uil uil-map-marker contact_icon"></i>
-
-                        <div>
-                            <div class="contact_title">Location</div>
-                            <span class="contact_subtitle">Jaipur/Rajasthan</span>
-                        </div>
-                    </div>
-
-                    <div class="contact_information">
-                        <a href="https://www.linkedin.com/in/ravi-sharma-816116253/" id="contact-linkedin" target="_blank" class="contact_icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <div>
-                            <div class="contact_title"><a href="https://www.linkedin.com/in/ravi-sharma-816116253/" id="contact-linkedin" style="color: var(--text-color-light); font-size: var(--h3-font-size);
-                                font-weight: var(--font-medium);"target="_blank" class="contact_icon">Linkedin</a></div>
-                            <span class="contact_subtitle">Ravi Sharma</span>
-                        </div>
-                    </div>
-
-                    <div class="contact_information">
-                        
-                        <a href="" target="_blank" class="contact_icon" id="contact-github">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <div>
-                            <div class="contact_title"><a href="" target="_blank" class="contact_icon" id="contact-github" style="color: var(--text-color-light); font-size: var(--h3-font-size);
-                                font-weight: var(--font-medium);">Github</a></div>
-                                <span class="contact_subtitle">RaviSharma7877</span>
-                        </div>
-                    </div>
+                    <h4 class="skills-card-name">Frontend</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum labore sequi recusandae eligendi, vel mollitia! Asperiores magnam obcaecati deleniti nulla aliquam, cum animi doloribus, nemo explicabo ipsa libero officiis.</p>
                 </div>
-                <form action="" class="contact_form grid">
-                    <div class="contact_inputs grid">
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Name</label>
-                            <input type="text" class="contact_input">
-                        </div>
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Email</label>
-                            <input type="email" class="contact_input">
-                        </div>
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Project</label>
-                            <input type="text" class="contact_input">
-                        </div>
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
-                        </div>
-                        <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
-                                <i class="uil uil-message button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </form>
             </div>
-        </section>
 
-    </main>
-    <footer class="footer">
-        <div class="footer_bg">
-            <div class="footer_container container grid">
+            <div class="skills-card card card-light services-card">
+                <span><img class="skills-card-img" src="/img/backend.png" alt=""></span>
                 <div>
-                    <h1 class="footer_title">Ravi</h1>
-                    <span class="footer_subtitle">Frontend developer</span>
-                </div>
-
-                <ul class="footer_links">
-                    <li>
-                        <a href="#services" class="footer_link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer_link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer_link">Contact Me</a>
-                    </li>
-                </ul>
-
-                <div class="footer_socials">
-                    <a href="" target="_blank" class="footer_social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ravi-sharma-816116253/" id="contact-linkedin" target="_blank" class="footer_social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="" target="_blank" class="footer_social" id="contact-github">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                    <a href="" target="_blank" class="footer_social" id="contact-phone">
-                        <i class="uil uil-phone"></i>
-                    </a>
-                    <a href="" target="_blank" class="footer_social" id="contact-email">
-                        <i class="uil uil-envelope"></i>
-                    </a>
+                    <h4 class="skills-card-name">Backend</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum labore sequi recusandae eligendi, vel mollitia! Asperiores magnam obcaecati deleniti nulla aliquam, cum animi doloribus, nemo explicabo ipsa libero officiis.</p>
                 </div>
             </div>
-            <p class="footer_copy">&#169; Ravi. All right reserved</p>
+
+            <div class="skills-card card card-light services-card">
+                <span><img class="skills-card-img" src="/img/mysql.png" alt=""></span>
+                <div>
+                    <h4 class="skills-card-name">Database</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum labore sequi recusandae eligendi, vel mollitia! Asperiores magnam obcaecati deleniti nulla aliquam, cum animi doloribus, nemo explicabo ipsa libero officiis.</p>
+                </div>
+            </div>
+
+            <div class="skills-card card card-light services-card">
+                <span><img class="skills-card-img" src="/img/springboot.png" alt=""></span>
+                <div>
+                    <h4 class="skills-card-name">Additional Frameworks</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum labore sequi recusandae eligendi, vel mollitia! Asperiores magnam obcaecati deleniti nulla aliquam, cum animi doloribus, nemo explicabo ipsa libero officiis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section end  -->
+
+    <!-- project sections started -->
+    <section id="projects">
+        <h2>Resent Works</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus ab nesciunt enim corrupti, nulla placeat dignissimos vel iure amet natus animi possimus minima totam, alias inventore sequi assumenda quos.</p>
+        <div class="container portfolio-container">
+            <div class="portfolio-tabs">
+                <div class="tab btn-sm btn-white btn active" data-name = "all">All</div>
+                <div class="tab btn-sm btn-white btn" data-name = "frontend">Frontend</div>
+                <div class="tab btn-sm btn-white btn" data-name = "backend">Backend</div>
+                <div class="tab btn-sm btn-white btn" data-name = "fullstack">Fullstack</div>
+            </div>
+            <div class="portfolio-projects">
+                <div class="portfolio-project project-card" data-name="frontend">
+                    <img src="/img/postal.png" alt="">
+                    <h5 class="project-title">Project1(Frontend)</h5>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro quas eligendi sequi in accusantium delectus neque ratione, blanditiis quod facilis error nam unde atque natus enim? Deleniti, tempore harum.</p>
+                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, etc.</p>
+                    <div class="header-action-aria">
+                        <a href="#" class="project-deployed-link btn btn-sm">Demo</a>
+                        <a href="#" class="project-github-link btn btn-primary btn-sm">Github</a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-project project-card" data-name="frontend">
+                    <img src="/img/dashB.png" alt="">
+                    <h5 class="project-title">Project2(Frontend)</h5>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro quas eligendi sequi in accusantium delectus neque ratione, blanditiis quod facilis error nam unde atque natus enim? Deleniti, tempore harum.</p>
+                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, etc.</p>
+                    <div class="header-action-aria">
+                        <a href="#" class="project-deployed-link btn btn-sm">Demo</a>
+                        <a href="#" class="project-github-link btn btn-primary btn-sm">Github</a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-project project-card" data-name="backend">
+                    <img src="/img/blue.png" alt="">
+                    <h5 class="project-title">Project3(Backend)</h5>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro quas eligendi sequi in accusantium delectus neque ratione, blanditiis quod facilis error nam unde atque natus enim? Deleniti, tempore harum.</p>
+                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, etc.</p>
+                    <div class="header-action-aria">
+                        <a href="#" class="project-deployed-link btn btn-sm">Demo</a>
+                        <a href="#" class="project-github-link btn btn-primary btn-sm">Github</a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-project project-card" data-name="fullstack">
+                    <img src="/img/todo.png" alt="">
+                    <h5 class="project-title">Project4(Fullstack)</h5>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro quas eligendi sequi in accusantium delectus neque ratione, blanditiis quod facilis error nam unde atque natus enim? Deleniti, tempore harum.</p>
+                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, etc.</p>
+                    <div class="header-action-aria">
+                        <a href="#" class="project-deployed-link btn btn-sm">Demo</a>
+                        <a href="#" class="project-github-link btn btn-primary btn-sm">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project section ended  -->
+
+    <!-- testimonial section start  -->
+    <section id="testimonials">
+        <h2>What Clintes Say</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid, soluta velit ea ab nihil vitae omnis sunt temporibus ipsam quis explicabo impedit, perferendis architecto minima eius rerum dicta quaerat.</p>
+        <div class="container testimonial-container swiper mySwiper">
+            <div class="testimonial-wrapper swiper-wrapper">
+                <div class="testimonial-slide card-light swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam exercitationem iure quis repellendus! Qui nulla corrupti tenetur, consectetur architecto dolorum culpa odio deserunt nobis unde rem earum, porro esse?</p>
+                    <div class="info">
+                        <img src="/img/profile.png" alt="">
+                        <div>
+                            <h5>Anna Danial</h5>
+                            <small>Singer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide card-light swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam exercitationem iure quis repellendus! Qui nulla corrupti tenetur, consectetur architecto dolorum culpa odio deserunt nobis unde rem earum, porro esse?</p>
+                    <div class="info">
+                        <img src="/img/profile.png" alt="">
+                        <div>
+                            <h5>Anna Danial</h5>
+                            <small>Singer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide card-light swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam exercitationem iure quis repellendus! Qui nulla corrupti tenetur, consectetur architecto dolorum culpa odio deserunt nobis unde rem earum, porro esse?</p>
+                    <div class="info">
+                        <img src="/img/profile.png" alt="">
+                        <div>
+                            <h5>Anna Danial</h5>
+                            <small>Singer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide card-light swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam exercitationem iure quis repellendus! Qui nulla corrupti tenetur, consectetur architecto dolorum culpa odio deserunt nobis unde rem earum, porro esse?</p>
+                    <div class="info">
+                        <img src="/img/profile.png" alt="">
+                        <div>
+                            <h5>Anna Danial</h5>
+                            <small>Singer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide card-light swiper-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam exercitationem iure quis repellendus! Qui nulla corrupti tenetur, consectetur architecto dolorum culpa odio deserunt nobis unde rem earum, porro esse?</p>
+                    <div class="info">
+                        <img src="/img/profile.png" alt="">
+                        <div>
+                            <h5>Anna Danial</h5>
+                            <small>Singer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- testimonial section end  -->
+
+    <!-- faq section start  -->
+    <section id="FAQs">
+        <h2>FAQs</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus praesentium nemo eligendi quibusdam dolorum maxime qui, excepturi rerum esse nisi numquam asperiores neque hic quia placeat ut fugiat non reprehenderit.</p>
+        <div class="container faqs-container">
+            <article class="faq card">
+                <div class="faq-ask">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <i class="fa fa-add"></i>
+                </div>
+                <p class="faq-ans">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis dolorum voluptatem hic excepturi assumenda rem sint fugit laborum voluptate qui, veniam fugiat nostrum maiores optio consequatur, doloremque eveniet inventore!
+                </p>
+            </article>
+            <article class="faq card">
+                <div class="faq-ask">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <i class="fa fa-add"></i>
+                </div>
+                <p class="faq-ans">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis dolorum voluptatem hic excepturi assumenda rem sint fugit laborum voluptate qui, veniam fugiat nostrum maiores optio consequatur, doloremque eveniet inventore!
+                </p>
+            </article>
+            <article class="faq card">
+                <div class="faq-ask">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <i class="fa fa-add"></i>
+                </div>
+                <p class="faq-ans">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis dolorum voluptatem hic excepturi assumenda rem sint fugit laborum voluptate qui, veniam fugiat nostrum maiores optio consequatur, doloremque eveniet inventore!
+                </p>
+            </article>
+            <article class="faq card">
+                <div class="faq-ask">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <i class="fa fa-add"></i>
+                </div>
+                <p class="faq-ans">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis dolorum voluptatem hic excepturi assumenda rem sint fugit laborum voluptate qui, veniam fugiat nostrum maiores optio consequatur, doloremque eveniet inventore!
+                </p>
+            </article>
+        </div>
+    </section>
+    <!-- faq section end  -->
+
+    <!-- contect section start  -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sint saepe adipisci, totam reprehenderit quia dignissimos modi blanditiis, similique rerum odit quis quam, ipsa pariatur repudiandae aperiam. Ratione, nam non.</p>
+        <div class="container contact-container">
+            <a href="mailto:" class="fa fa-message"></a>
+            <a href="" class="fab fa-whatsapp"></a>
+            <a href="" class="fab fa-skype"></a>
+        </div>
+    </section>
+    <!-- contect section end  -->
+
+    <!-- footer section start  -->
+    <footer>
+        <div class="container footer-container">
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; Copyright by Ravi || All Rights Reserved</p>
         </div>
     </footer>
+    <!-- footer section end  -->
 
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup_icon"></i>
-    </a>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- phone menu links  -->
+    <div class="menu-links">
+        <a href="#home" class="active"><i class="fa fa-home"></i></a>
+        <a href="#about"><i class="fa fa-user"></i></a>
+        <a href="#service"><i class="fa fa-box"></i></a>
+        <a href="#portfolio"><i class="fab fa-windows"></i></a>
+        <a href="#contact"><i class="fa fa-sms"></i></a>
+    </div>
+
+    <div class="theme-customize">
+        <div class="customize-container">
+            <i class="fa fa-close"></i>
+            <h2>Customize Theme</h2>
+            <p>Manage Color & Background</p>
+
+            <div class="colors">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color1"></span>
+                    <span class="color2"></span>
+                    <span class="color3"></span>
+                    <span class="color4"></span>
+                    <span class="color5"></span>
+                </div>
+            </div>
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <span class="bg1"></span>
+                    <span class="bg2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
-
-<!-- <script src="/js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script> -->
 <script src="/js/index.js"></script>
-<script>
-    // const username = "RaviSharma7877";
-    GitHubCalendar(".calendar", "RaviSharma7877");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "RaviSharma7877", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "RaviSharma7877", {
-        proxy(username) {
-            return fetch(`https://your-proxy.com/github?user=${username}`)
-        }
-    }).then(r => r.text())
-</script>
-
 </html>
