@@ -347,7 +347,7 @@ h6{
 
 
 
- #services{
+ #skills{
     background: var(--color-white);
  }
  .services-container{
@@ -667,6 +667,71 @@ h6{
 
 
 
+#resume{
+   background: var(--color-white);
+}
+ .container1{
+   width: 100%;
+   padding: 35px 10%;
+}
+.container1{
+   padding-right: calc(10% - 30px);
+}
+div.row{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 20px;
+}
+.col div.title{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #11a372;
+   padding: 0 0 20px 30px;
+}
+.col .contents{
+   padding: 0 30px;
+   border-left: 2px solid #bababa;
+}
+.col .contents .box{
+   position: relative;
+   padding: 20px;
+   border: 1px solid #eaeaea;
+   background-color: #ffffff;
+   cursor: pointer;
+   transition: all 0.4s;
+   margin-bottom: 20px;
+}
+.col .contents .box:hover{
+   box-shadow: 0px 3px 12px 0px #ccc;
+   border: 1px solid transparent;
+}
+.col .contents .box::before{
+   content: '';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   right: calc(100% + 22px);
+   top: 0;
+   background-color: #11a372;
+   border:  2px solid white;
+}
+.box h4{
+   position: relative;
+   color: #11a372;
+}
+.box h3{
+   font-size: 19px;
+   padding: 10px 0 6px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #444;
+}
+.box p{
+   line-height: 1.2;
+   color: #666;
+   font-size: 17px;
+}
+
+
 
 
 
@@ -833,4 +898,10 @@ h6{
       padding: 2rem !important;
       width: 90%;
    }
+   div.row{
+      grid-template-columns: 1fr;
+  }
+  .row .col:nth-child(2){
+      margin-top: 30px;
+  }
  }
