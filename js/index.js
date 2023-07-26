@@ -55,7 +55,7 @@ let swiper = new Swiper(" .mySwiper",{
 })
 
 
-if(window.innerWidth < 1024){
+if(window.innerWidth < 971){
     window.addEventListener('scroll',()=>{
         document.querySelector('.menu-links').style.display='flex'
     })
