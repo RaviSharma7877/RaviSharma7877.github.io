@@ -1,3 +1,5 @@
+
+
 window.addEventListener('load',() =>{
     let filtertab = document.querySelectorAll('.tab')
     const removefilter = () => filtertab.forEach(tab => {
@@ -119,3 +121,37 @@ allbgpallet.forEach(bg=>{
         }
     })
 })
+
+
+
+
+// JavaScript code for handling the resume buttons
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the resume buttons by their IDs
+    const resumeButton1 = document.getElementById("resume-button-1");
+    const resumeButton2 = document.getElementById("resume-button-2");
+  
+    // Function to open the resume in a new tab
+    function openResumeInNewTab() {
+      // Replace 'your_resume.pdf' with the actual URL or path to your resume PDF file
+      const resumeUrl = "your_resume.pdf";
+      window.open(resumeUrl, "_blank");
+    }
+  
+    // Function to download the resume as a PDF
+    function downloadResumeAsPDF() {
+      // Replace 'your_resume.pdf' with the actual URL or path to your resume PDF file
+      const resumeUrl = "your_resume.pdf";
+      const link = document.createElement("a");
+      link.href = resumeUrl;
+      link.download = "your_resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  
+    // Add click event listeners to the resume buttons
+    resumeButton1.addEventListener("click", openResumeInNewTab);
+    resumeButton2.addEventListener("click", downloadResumeAsPDF);
+  });
+  

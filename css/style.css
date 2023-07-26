@@ -509,9 +509,7 @@ h6{
 
 
 
- #contact{
-   background: var(--color-white);
- }
+
  .contact-container{
    width: 20rem;
    display: flex;
@@ -729,6 +727,39 @@ div.row{
    line-height: 1.2;
    color: #666;
    font-size: 17px;
+}
+
+
+#github{
+   background: var(--color-white);
+}
+.github-container{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.github-activity-calendar{
+   box-shadow: 0px 3px 12px 0px #ccc;
+   border: 1px solid transparent;
+   border-radius: var(--border-radious3);
+}
+.github-activity-calendar:hover{
+   box-shadow: none;
+   box-shadow: 0px 3px 12px 0px var(--color-light);
+   border: 1px solid var(--color-light);
+}
+#github-stats-card img{
+   margin-bottom: .7rem;
+   gap: 1.4rem;
+}
+#github-stats-card img:hover{
+   overflow: hidden;
+   transition: var(--transition);
+   box-shadow: 0px 3px 12px 0px #ccc;
+   border-radius: var(--border-radious3);
 }
 
 
