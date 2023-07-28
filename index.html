@@ -15,9 +15,9 @@
 <body>
     <!-- start navbar  -->
     <nav >
-        <div class="container nav-container">
+        <div class="container nav-container" id="nav-menu">
             <a href="#" class="logo"><img src="/img/Logo.png" alt=""></a>
-            <ul class="nav-links" id="nav-menu">
+            <ul class="nav-links">
                 <li><a href="#home" class="nav-link home">Home</a></li>
                 <li><a href="#about" class="nav-link about">About</a></li>
                 <li><a href="#skills" class="nav-link skills">Skills</a></li>
@@ -38,7 +38,7 @@
                 <img class="home-img" src="/img/profile.png" alt="">
             </div>
             <h3 id="user-detail-name">Ravi Sharma</h3>
-            <p>Proficient in front-end technologies such as
+            <p id="user-detail-intro">Proficient in front-end technologies such as
                 HTML, CSS, and JavaScript, as well as back-end
                 technologies such as Java. Experienced in
                 working with agile development methodologies
@@ -49,12 +49,12 @@
                 <a href="#projects" class="btn">My Work</a>
             </div>
             <div class="header-social">
-                <a id="contact-github"  href="https://github.com/RaviSharma7877"><i
+                <a id="contact-github" class="nav-link contact" href="https://github.com/RaviSharma7877"><i
                         class="fab fa-github"></i></a>
-                <a id="contact-linkedin" 
+                <a id="contact-linkedin" class="nav-link contact"
                     href="https://www.linkedin.com/in/ravi-sharma-816116253/"><i class="fab fa-linkedin"></i></a>
-                <a id="contact-phone"  href=""><i class="fa fa-phone"></i></a>
-                <a id="contact-email"  href="mailto:"><i class="fa fa-envelope"></i></a>
+                <a id="contact-phone" class="nav-link contact" href=""><i class="fa fa-phone"></i></a>
+                <a id="contact-email" class="nav-link contact" href="mailto:"><i class="fa fa-envelope"></i></a>
             </div>
         </div>
     </header>
@@ -87,7 +87,7 @@
                         <small>2+ Happy Clintes</small>
                     </div>
                 </div>
-                <p id="user-detail-intro">Hello! I'm Ravi Sharma, a passionate Full Stack Web Developer with expertise in HTML, CSS,
+                <p>Hello! I'm Ravi Sharma, a passionate Full Stack Web Developer with expertise in HTML, CSS,
                     JavaScript, Java, Spring Boot, and MySQL. I embarked on my journey in the world of web development
                     through the comprehensive training provided by Masai School, where I honed my skills and acquired
                     in-depth knowledge of various technologies.</p>
@@ -96,7 +96,7 @@
                     Java and Spring Boot, enabling me to build robust and scalable server-side applications.
                     Additionally, my proficiency in MySQL allows me to design efficient databases to manage data
                     effectively.</p>
-                    <button id="resume-link-1"  style="background: transparent; border: none;"><a id="resume-button-2" href="/pdf/Ravi-Sharma-Resume.pdf" download  class="btn btn-primary btn-sm">Download CV.</a></button>
+                    <a id="resume-link-1" href="/pdf/Ravi-Sharma-Resume.pdf" download  class="btn btn-primary btn-sm"><button id="resume-button-1" style="background: transparent; border: none;">Download CV.</button></a>
             </div>
         </div>
     </section>
@@ -168,7 +168,6 @@
                 <div class="tab btn-sm btn-white btn" data-name="frontend">Frontend</div>
                 <div class="tab btn-sm btn-white btn" data-name="backend">Backend</div>
                 <div class="tab btn-sm btn-white btn" data-name="fullstack">Fullstack</div>
-                <div class="tab btn-sm btn-white btn" data-name="fullstack">FreeLencing</div>
             </div>
             <div class="portfolio-projects">
                 <div class="portfolio-project project-card" data-name="frontend">
@@ -213,19 +212,6 @@
                 <div class="portfolio-project project-card" data-name="fullstack">
                     <img src="/img/todo.png" alt="">
                     <h5 class="project-title">Project4(Fullstack)</h5>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro
-                        quas eligendi sequi in accusantium delectus neque ratione, blanditiis quod facilis error nam
-                        unde atque natus enim? Deleniti, tempore harum.</p>
-                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, etc.</p>
-                    <div class="header-action-aria">
-                        <a href="#" class="project-deployed-link btn btn-sm">Demo</a>
-                        <a href="#" class="project-github-link btn btn-primary btn-sm">Github</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-project project-card" data-name="freelencing">
-                    <img src="/img/catholichub.png" alt="">
-                    <h5 class="project-title">Project5(FreeLencing)</h5>
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro
                         quas eligendi sequi in accusantium delectus neque ratione, blanditiis quod facilis error nam
                         unde atque natus enim? Deleniti, tempore harum.</p>
@@ -297,7 +283,7 @@
                     </div>
                 </div>
             </div>
-            <button id="resume-link-2" style="background: transparent; border: none;"><a href="/pdf/Ravi-Sharma-Resume.pdf" download  class="btn btn-primary btn-sm">Download CV.</a></button>
+            <button id="resume-button-2" style="background: transparent; border: none;"><a id="resume-link-2" href="/pdf/Ravi-Sharma-Resume.pdf" download  class="btn btn-primary btn-sm">Download CV.</a></button>
                 
         </div>
 
@@ -372,12 +358,12 @@
               </div>
 
               <!-- GitHub Statistics -->
-          <div>
+          <div id="github-stats-card">
             <img src="https://github-readme-streak-stats.herokuapp.com/?user=RaviSharma7877" alt="GitHub Streak Stats" id="github-streak-stats">
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaviSharma7877" alt="GitHub Top Languages" id="github-top-langs">
-            
-            <img src="https://github-readme-stats.vercel.app/api?username=RaviSharma7877&show_icons=true&count_private=true" alt="GitHub Stats" id="github-stats-card">
-            
+            <div >
+                <img src="https://github-readme-stats.vercel.app/api?username=RaviSharma7877&show_icons=true&count_private=true" alt="GitHub Stats" id="github-stats-card">
+              </div>
             
         </div>
         </div>
@@ -396,12 +382,12 @@
         <p id="contact-email">Email:- <b><i>sraa7877@gmail.com</i></b></p>
         <div class="container contact-container">
 
-            <a id="contact-github"  href="https://github.com/RaviSharma7877"><i
+            <a id="contact-github" class="nav-link contact" href="https://github.com/RaviSharma7877"><i
                     class="fab fa-github"></i></a>
-            <a id="contact-linkedin" 
+            <a id="contact-linkedin" class="nav-link contact"
                 href="https://www.linkedin.com/in/ravi-sharma-816116253/"><i class="fab fa-linkedin"></i></a>
-            <a id="contact-phone"  href=""><i class="fa fa-phone"></i></a>
-            <a id="contact-email"  href="mailto:"><i class="fa fa-envelope"></i></a>
+            <a id="contact-phone" class="nav-link contact" href=""><i class="fa fa-phone"></i></a>
+            <a id="contact-email" class="nav-link contact" href="mailto:"><i class="fa fa-envelope"></i></a>
         </div>
     </section>
     <!-- contect section end  -->
@@ -429,16 +415,16 @@
     </footer>
     <!-- footer section end  -->
 
-    <!-- phone menu links 
+    <!-- phone menu links  -->
     <div class="menu-links nav-links">
-        <li><a href="#home" class="nav-link home active fa fa-home"></a></li>
-                <li><a href="#about" class="nav-link about fa fa-user"></a></li>
-                <li><a href="#skills" class="nav-link skills fa fa-box"></a></li>
-                <li><a href="#projects" class="nav-link projects fab fa-windows"></a></li>
-                <li><a href="#contact" class="nav-link contact fa fa-sms"></a></li>
-                <li><a id="resume-button-1" class="nav-link resume fa fa-download" href="/pdf/Ravi-Sharma-Resume.pdf"
-                        download></a></li>
-    </div> -->
+        <li><a href="#home" class="nav-link home">Home</a></li>
+                <li><a href="#about" class="nav-link about">About</a></li>
+                <li><a href="#skills" class="nav-link skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link contact">Contact</a></li>
+                <li><a id="resume-button-1" class="nav-link resume" href="/pdf/Ravi-Sharma-Resume.pdf"
+                        download>Resume</a></li>
+    </div>
 
     <div class="theme-customize">
         <div class="customize-container">
