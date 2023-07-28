@@ -804,7 +804,6 @@ div.row{
       position: fixed;
       border-radius: 2rem;
       gap: 1rem;
-      display: none;
       backdrop-filter: 20px;
       transition: var(--transition);
    }
@@ -896,7 +895,7 @@ div.row{
       gap: 1rem;
    }
    .menu-links{
-      gap: .8rem;
+      gap: .4rem;
    }
    .about-cards{
       grid-template-columns: 1fr 1fr;
