@@ -769,7 +769,7 @@ div.row{
 
 
 
-
+/* 
  @media (max-width: 970px){
 
    body{
@@ -790,7 +790,7 @@ div.row{
    /* .nav-links{
       display: none;
    } */
-   .menu-links{
+   /* .menu-links{
       background: rgba(0, 0, 0, 0.3);
       display: block;
       left: 50%;
@@ -933,5 +933,5 @@ div.row{
   }
   .row .col:nth-child(2){
       margin-top: 30px;
-  }
- }
+  } */
+ /* } */ 
