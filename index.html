@@ -23,8 +23,8 @@
                 <li><a href="#skills" class="nav-link skills">Skills</a></li>
                 <li><a href="#projects" class="nav-link projects">Projects</a></li>
                 <li><a href="#contact" class="nav-link contact">Contact</a></li>
-                <li><a id="resume-button-1" class="nav-link resume" href="https://drive.google.com/file/d/1dR4LWEJ-Q3PK6J7EFKghiy9rrEyK-uA7/view?usp=sharing"
-                       target="_blank" download="/pdf/Ravi-Sharma-Resume">Resume</a></li>
+                <li><a id="resume-button-1" class="nav-link resume" href=""
+                    onclick="downloadResumeAndOpenDrive(); return false;" target="_blank" >Resume</a></li>
             </ul>
             <button id="theme-icon"><i class="fa fa-palette"></i></button>
         </div>
@@ -96,7 +96,7 @@
                     Java and Spring Boot, enabling me to build robust and scalable server-side applications.
                     Additionally, my proficiency in MySQL allows me to design efficient databases to manage data
                     effectively.</p>
-                    <a id="resume-link-1" href="/pdf/Ravi-Sharma-Resume.pdf" download  class="btn btn-primary btn-sm"><button id="resume-button-1" style="background: transparent; border: none;">Download CV.</button></a>
+                    <a id="resume-link-1" href="" onclick="downloadResumeAndOpenDrive(); return false;"  class="btn btn-primary btn-sm"><button id="resume-button-1" style="background: transparent; border: none;">Download CV.</button></a>
             </div>
         </div>
     </section>
@@ -241,19 +241,19 @@
                     </div>
                     <div class="contents">
                         <div class="box">
-                            <h4>2018-2022</h4>
-                            <h3>High school</h3>
-                            <p>Lorem, ipsum.</p>
+                            <h4>2022-till_Date</h4>
+                            <h3>Fullstack Web Development Cource</h3>
+                            <p>MasaiSchool, Bangalore</p>
                         </div>
                         <div class="box">
-                            <h4>2018-2022</h4>
-                            <h3>High school</h3>
-                            <p>Lorem, ipsum.</p>
+                            <h4>2019-2022</h4>
+                            <h3>Bachelor of Science (BSc)</h3>
+                            <p>Carrier Collage, Churu</p>
                         </div>
                         <div class="box">
-                            <h4>2018-2022</h4>
+                            <h4>2018-2019</h4>
                             <h3>High school</h3>
-                            <p>Lorem, ipsum.</p>
+                            <p>ShardarPatel Ser Sec School, Churu</p>
                         </div>
                     </div>
                 </div>
@@ -261,29 +261,26 @@
 
                 <div class="col">
                     <div class="title">
-                        <h2>EXPERIANCE
+                        <h2>My PlayList
                         </h2>
                     </div>
                     <div class="contents">
                         <div class="box">
-                            <h4>2018-2022</h4>
-                            <h3>ui school</h3>
-                            <p>Lorem, ipsum.</p>
+                            <h4>Brotherhood</h4>
+                            <p>Mankrit Aulakh</p>
                         </div>
                         <div class="box">
-                            <h4>2018-2022</h4>
-                            <h3>High school</h3>
-                            <p>Lorem, ipsum.</p>
+                            <h4>Excuses</h4>
+                            <p>AP Dhillon</p>
                         </div>
                         <div class="box">
-                            <h4>2018-2022</h4>
-                            <h3>High school</h3>
-                            <p>Lorem, ipsum.</p>
+                            <h4>Mi Amor</h4>
+                            <p>Sharn</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <button id="resume-button-2" style="background: transparent; border: none;"><a id="resume-link-2" href="/pdf/Ravi-Sharma-Resume.pdf" download  class="btn btn-primary btn-sm">Download CV.</a></button>
+            <button id="resume-button-2" style="background: transparent; border: none;"><a id="resume-link-2" href="" onclick="downloadResumeAndOpenDrive(); return false;"  class="btn btn-primary btn-sm">Download CV.</a></button>
                 
         </div>
 
@@ -457,5 +454,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 <script src="/js/index.js"></script>
+<script>
+    function downloadResumeAndOpenDrive() {
+        // Download the resume in PDF format
+        var resumeLink = document.createElement('a');
+        resumeLink.href = '/pdf/Ravi-Sharma-Resume.pdf';
+        resumeLink.download = '/pdf/Ravi-Sharma-Resume.pdf';
+        resumeLink.style.display = 'none';
+        document.body.appendChild(resumeLink);
+        resumeLink.click();
+        document.body.removeChild(resumeLink);
 
+        // Open Google Drive link in a new tab
+        window.open('https://drive.google.com/file/d/1dR4LWEJ-Q3PK6J7EFKghiy9rrEyK-uA7/view?usp=sharing', '_blank');
+    }
+</script>
 </html>
