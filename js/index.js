@@ -134,17 +134,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to open the resume in a new tab
     function openResumeInNewTab() {
       // Replace 'your_resume.pdf' with the actual URL or path to your resume PDF file
-      const resumeUrl = "your_resume.pdf";
+      const resumeUrl = "Ravi-Sharma-Resume.pdf";
       window.open(resumeUrl, "_blank");
     }
   
     // Function to download the resume as a PDF
     function downloadResumeAsPDF() {
       // Replace 'your_resume.pdf' with the actual URL or path to your resume PDF file
-      const resumeUrl = "your_resume.pdf";
+      const resumeUrl = "Ravi-Sharma-Resume.pdf";
       const link = document.createElement("a");
       link.href = resumeUrl;
-      link.download = "your_resume.pdf";
+      link.download = "Ravi-Sharma-Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
