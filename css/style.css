@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -52,7 +53,7 @@ section>h2{
 section>p{
     text-align: center;
     width: 40%;
-    margin: .5rem auto 4rem;
+    margin: .5rem auto 2rem;
     color: var(--color-dark);
 }
 a{
@@ -183,7 +184,7 @@ h6{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 888;
     box-shadow: 0 1rem 1.5rem rgba(100, 100, 100, 0.2);
  }
  .nav-container{
@@ -401,39 +402,7 @@ h6{
     transform: none !important;
     border: none;
  }
- .portfolio-projects{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-    
- }
 
- .portfolio-project{
-    background: var(--color-white);
-    padding: 1.4rem;
-    border-radius: var(--border-radious1);
-    animation: scalAni .6s;
- }
- @keyframes scalAni {
-   0%{
-       transform: scale(0);
-   }
-   100%{
-       transform: scale(1);
-   }
-}
- .portfolio-project img{
-    border-radius: var(--border-radious2);
- }
- .portfolio-project h5{
-    font-size: 1.1rem;
-    margin: .7rem 0;
- }
- .portfolio-project p{
-    font-size: 15px;
-    color: var(--color-dark);
-    margin-bottom: 2rem;
- }
 
 
 
@@ -579,7 +548,7 @@ h6{
    background: rgba(0, 0, 0, 0.3);
    width: 100%;
    height: 100%;
-   z-index: 11;
+   z-index: 999;
    backdrop-filter: 20px;
    display: flex;
    align-items: center;
@@ -770,6 +739,142 @@ div.row{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #projectteam {
+   padding: 30px 0;
+ }
+ .projectwrapper{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 35px;
+   margin-top: 50px;
+   /* gap: 10px; */
+ }
+ .projectcard {
+   width: 300px;
+   height: 400px;
+   position: relative;
+   perspective: 1000px;
+   z-index: 800;
+   margin: auto;
+ }
+ .projectcard-front,
+ .projectcard-back {
+   position: absolute;
+   background-color: #f5f5f5;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   transition: transform .6s ease-in-out;
+   z-index: 1;
+ }
+ .projectcard-front {
+   text-align: center;
+   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+   color: #6a6a6a;
+ }
+ .projectimg {
+   width: 200px;
+   height: 100px;
+   border-radius: 10px;
+   overflow: hidden;
+   border: 2px solid rgb(216, 216, 216);
+   margin: auto;
+ }
+ .projectimg img{
+   width: 100%;
+ }
+ .projectimg-area {
+   height: 150px;
+   background-color: transparent;
+   background: var(--color-primary);
+   border-radius: 0 0 150px 150px;
+   padding: 15px 0;
+   z-index: 0;
+ }
+ .projectcard-front h2 {
+   margin-top: 20px;
+   font-family: bebas neue;
+   font-size: 30px;
+   letter-spacing: 2px;
+ }
+ .social i{
+   color: #000;
+   margin: 10px 15px 20px;
+ }
+ .des {
+   width: 85%;
+   margin: auto;
+   font-size: 14px;
+   line-height: 1.3;
+ }
+ .projectcard-back {
+   color: #000;
+   transform: rotateX(180deg);
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+ }
+ .projectcard-back img {
+   width: 40%;
+   margin-bottom: 30px;
+ 
+ }
+ .projectcard-back h3 {
+   font-size: 16px;
+   line-height: 1.9;
+ }
+ .signature {
+   margin-top: 40px;
+ }
+ .signature p{
+   font-family: arizonia;
+   font-size: 35px;
+   margin-bottom: px;
+ }
+ .projectcard:hover .projectcard-front{
+   transform: rotateX(180deg);
+ }
+ .projectcard:hover .projectcard-back{
+   transform: rotateX(0deg);
+ }
+
+
+
+
+
+
+ @media (max-width: 1740px){
+   .projectwrapper{
+      grid-template-columns: repeat(3,1fr);
+    }
+ }
+ @media (max-width: 1240px){
+   .projectwrapper{
+      grid-template-columns: repeat(2,1fr);
+    }
+ }
+
  @media (max-width: 970px){
 
    body{
@@ -799,7 +904,7 @@ div.row{
       width: max-content;
       display: flex;
       align-items: center;
-      z-index: 10;
+      z-index: 888;
       padding: .7rem 1.6rem;
       position: fixed;
       border-radius: 2rem;
@@ -836,13 +941,7 @@ div.row{
    .services-container{
       gap: 1.4rem;
    }
-   .portfolio-projects{
-      gap: 1.4rem;
-      grid-template-columns: repeat(2,1fr);
-   }
-   .portfolio-project{
-      padding: 1.2rem;
-   }
+  
    .faqs-container{
       gap: 1.4rem;
    }
@@ -861,6 +960,9 @@ div.row{
    }
  }
  @media (max-width: 600px){
+   .projectwrapper{
+      grid-template-columns: repeat(1,1fr);
+    }
    h1{
       font-size: 2.4rem;
    }
@@ -911,10 +1013,6 @@ div.row{
    .portfolio-tabs{
       gap: 1.4rem;
       justify-content: space-between;
-   }
-   .portfolio-projects{
-      grid-template-columns: 1fr;
-      gap: 1rem;
    }
    .faqs-container{
       grid-template-columns: 1fr;
