@@ -347,42 +347,58 @@ h6{
 
 
 
-
- #skills{
-    background: var(--color-white);
- }
- .services-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
- }
- .services-card{
-    display: flex;
-    align-self: flex-start;
-    gap: 1.4rem;
- }
- .services-card span{
-    padding: .7rem;
-    font-size: 1.4rem;
-    background: var(--color-primary);
-    height: max-content;
-    border-radius: var(--border-radious3);
-    color: var(--color-white);
-    display: flex;
-    transition: var(--transition);
- }
- .services-card:hover span{
-    background: transparent;
-    color: var(--color-primary);
- }
- .services-card h4{
-    margin-bottom: 1rem;
- }
- .services-card p{
-    color: var(--color-dark);
- }
-
-
+.skillscontainer {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center;
+   padding: 0 7rem;
+   gap: 20px;
+}
+.skillscontainer img {
+   height: 2rem;
+   width: 2rem;
+}
+.skillscontainer> div {
+   padding: 2.5rem;
+   flex: 1;
+   border-radius: 2rem;
+   border: rgb(53, 53, 53) 0.1rem solid;
+   border-color: rgb(163, 163, 163);
+   margin: 0 13px;
+   width: 100%;
+}
+.skillscontainer> div> div:nth-child(1) {
+   text-align: center;
+   color: rgb(85, 85, 85);
+   font-weight: 600;
+   font-size: 1.8rem;
+   margin-bottom: 1rem;
+   padding: 10px 0;
+}
+.skillscontainer> div> div:nth-child(2) {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.skillscontainer> div> div:nth-child(2) div {
+   display: flex;
+   margin: 25px 20px;
+   align-items: center;
+   padding: 0 15px;
+   opacity: 0.8;
+   transition: 0.3s;
+}
+.skillscontainer> div> div:nth-child(2) div h1 {
+   font-size: 2rem;
+   transition: 0.3s;
+}
+.skillscontainer> div> div:nth-child(2) div:hover h1 {
+   transform: translateX(5px);
+   opacity: 1;
+}
+.skillscontainer> div> div:nth-child(2) div:hover {
+   opacity: 1;
+}
 
 
 
@@ -873,6 +889,11 @@ div.row{
    .projectwrapper{
       grid-template-columns: repeat(2,1fr);
     }
+ }
+ @media (max-width: 1050px){
+   .skillscontainer {
+      grid-template-columns: repeat(1,1fr);
+   }
  }
 
  @media (max-width: 970px){
