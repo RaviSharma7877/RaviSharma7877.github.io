@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31a7bbff.css",
-    "main.js": "/static/js/main.c19d28eb.js",
+    "main.js": "/static/js/main.7fe8c158.js",
     "static/js/726.26062047.chunk.js": "/static/js/726.26062047.chunk.js",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
@@ -9,8 +9,8 @@
     "static/media/bgIMG.png": "/static/media/bgIMG.c39101e520e2997fc6d4.png",
     "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
     "static/media/about03.png": "/static/media/about03.c26c2547bb1a423cf283.png",
+    "static/media/RaviSharma.pdf": "/static/media/RaviSharma.9680944198381aecdc5a.pdf",
     "static/media/spotify.png": "/static/media/spotify.2b5e9be1eb1ab501e7cd.png",
-    "static/media/RaviSharma.pdf": "/static/media/RaviSharma.4e21263cfb3f56f4f345.pdf",
     "static/media/nb.png": "/static/media/nb.98f3253e32cc67a4cb5e.png",
     "static/media/asus.png": "/static/media/asus.514bc34955008a92e09f.png",
     "static/media/profile.png": "/static/media/profile.852203487413fa7a09ff.png",
@@ -34,11 +34,11 @@
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
     "main.31a7bbff.css.map": "/static/css/main.31a7bbff.css.map",
-    "main.c19d28eb.js.map": "/static/js/main.c19d28eb.js.map",
+    "main.7fe8c158.js.map": "/static/js/main.7fe8c158.js.map",
     "726.26062047.chunk.js.map": "/static/js/726.26062047.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31a7bbff.css",
-    "static/js/main.c19d28eb.js"
+    "static/js/main.7fe8c158.js"
   ]
 }
