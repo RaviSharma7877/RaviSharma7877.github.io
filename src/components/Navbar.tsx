@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import ResumeButton from './ResumeButton';
 
 const links = [
   { href: '#home', label: 'Home' },
@@ -9,6 +10,7 @@ const links = [
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export default function Navbar() {
@@ -49,14 +51,7 @@ export default function Navbar() {
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-black transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
-            <a
-              href="/media/RaviSharmaResume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm font-medium px-4 py-1.5 border border-black text-black hover:bg-black hover:text-white transition-all duration-200"
-            >
-              Resume
-            </a>
+            <ResumeButton className="text-sm font-medium px-4 py-1.5 border border-black text-black hover:bg-black hover:text-white transition-all duration-200" />
           </div>
 
           {/* Mobile hamburger */}
@@ -85,14 +80,7 @@ export default function Navbar() {
               {label}
             </a>
           ))}
-          <a
-            href="/media/RaviSharmaResume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm font-medium px-4 py-2 border border-black text-black text-center hover:bg-black hover:text-white transition-all duration-200"
-          >
-            Resume
-          </a>
+          <ResumeButton className="text-sm font-medium px-4 py-2 border border-black text-black text-center hover:bg-black hover:text-white transition-all duration-200" />
         </div>
       )}
     </nav>

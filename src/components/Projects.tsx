@@ -36,6 +36,18 @@ const projects = [
     ],
     link: 'https://nexavenir.com',
   },
+  {
+    number: '04',
+    title: 'SketchPad',
+    techstack: ['Socket.io', 'WebSockets', 'Canvas API', 'Real-time Sync'],
+    description: [
+      'A professional collaborative whiteboard with an infinite canvas for teams to draw, design, and plan together in real time.',
+      'Built real-time collaboration with live cursors and instant state sync via Socket.io — guests join via shareable link with no signup required.',
+      'Implemented infinite canvas with zoom from 5% to 3000%, rich shape library (rectangles, ellipses, arrows, freehand, sticky notes), and layer management.',
+      'Smart export to PNG, PDF, SVG, and JSON at any resolution, plus one-click version history to snapshot and restore any previous canvas state.',
+    ],
+    link: 'https://sketchboard.e2shub.com/',
+  },
 ];
 
 export default function Projects() {
@@ -74,17 +86,20 @@ export default function Projects() {
                   </h3>
                   {/* Arrow icon */}
 
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-10 h-10 border border-[#e0e0e0] flex items-center justify-center group-hover:border-black group-hover:bg-black transition-all duration-300">
-                    <div className="flex-shrink-0 w-10 h-10 border border-[#e0e0e0] flex items-center justify-center group-hover:border-black group-hover:bg-black transition-all duration-300">
-                      <svg
-                        className="w-4 h-4 text-[#bbb] group-hover:text-white transition-colors duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
-                      </svg>
-                    </div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-10 h-10 border border-[#e0e0e0] flex items-center justify-center group-hover:border-black group-hover:bg-black transition-all duration-300"
+                  >
+                    <svg
+                      className="w-4 h-4 text-[#bbb] group-hover:text-white transition-colors duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
+                    </svg>
                   </a>
                 </div>
 

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import ResumeButton from './ResumeButton';
 
 export default function Hero() {
   const cursorRef = useRef<HTMLSpanElement>(null);
@@ -80,14 +81,7 @@ export default function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a
-              href="/media/RaviSharmaResume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="px-6 py-3 border border-[#ccc] text-[#888] text-sm font-semibold tracking-wide hover:border-black hover:text-black transition-all duration-200"
-            >
-              Resume
-            </a>
+            <ResumeButton className="px-6 py-3 border border-[#ccc] text-[#888] text-sm font-semibold tracking-wide hover:border-black hover:text-black transition-all duration-200" />
           </div>
         </div>
 
